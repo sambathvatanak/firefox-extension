@@ -1,7 +1,7 @@
-body{
-  width: 300px;
+/* body{
+  width: 329px;
   height: 380px;
-}
+} */
 .nav-side-menu {
   overflow: auto;
   font-family: verdana;
@@ -145,23 +145,25 @@ body {
   text-align: center;
 }
 .brand {
-  text-align: left !important;
-  font-size: 22px;
-  padding-left: 60px;
   line-height: 50px !important;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .avatar {
-  text-align: right !important;
-  padding-left: 10px;
-  padding-left: 10px;
   padding-top: 10px;
   padding-bottom: 15px;
-  vertical-align: middle;
   width: 180px;
   height: 69px;
 }
 
 li.nav-link {
+  padding-left: 15px;
+}
+
+li#nav-link {
   padding-left: 15px;
 }

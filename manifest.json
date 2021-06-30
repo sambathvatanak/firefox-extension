@@ -1,16 +1,24 @@
 {
     "name": "AIB-DST",
-    "description": "Extension use for AIB",
-    "version": "1.0",
-    "manifest_version": 3,
+    "description": "Google chrome extension use for AIB",
+    "version": "1.0.0",
+    "manifest_version": 2,
     "background": {
-        "service_worker": "background.js"
+        "scripts":[
+            "node_modules/webextension-polyfill/dist/browser-polyfill.js",
+            "background.js"
+        ]
     },
-    "permissions": ["storage"],
-    "action": {
-        "default_popup": "popup.html",
+    "permissions": [
+        "storage",
+        "activeTab",
+        "tabs"
+    ],
+    "browser_action": {       
         "default_icon": {               
             "16": "image/logo.png"    
-          }
+          },
+        "default_title": "AIB-DST",
+        "default_popup": "popup.html"
       }       
   }
