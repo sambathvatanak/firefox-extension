@@ -1,0 +1,2 @@
+this extension create just to link all the sites in one click.
+the source code created with JS,HTML,CSS.
